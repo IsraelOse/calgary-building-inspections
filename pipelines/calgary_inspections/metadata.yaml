@@ -1,0 +1,24 @@
+name: calgary_inspections
+description: >
+  Analyses ~105k Calgary building inspections to test whether geographic zone
+  or inspection type drives failure. Runs a chi-square/Cramer's V association
+  test and trains Logistic Regression, Decision Tree, and Random Forest.
+
+execution_order:
+  - {block: data_loaders.inspection_loader.load_inspections, type: data_loader}
+  - {block: transformers.clean.clean, type: transformer}
+  - {block: transformers.statistics.zone_association, type: transformer}
+  - {block: transformers.features.build_xy, type: transformer}
+  - {block: transformers.features.split_xy, type: transformer}
+  - {block: transformers.model_training.train_and_evaluate, type: transformer}
+  - {block: data_exporters.local_exporter.export_results, type: data_exporter}
+
+variables:
+  seed: 42
+  test_size: 0.30
+  target: failed
+  features: [zone, inspection_type_desc, inspection_year]
+
+schedule:
+  interval: "0 4 1 * *"
+  enabled: false

@@ -1,0 +1,13 @@
+{
+  "n_rows": 105462,
+  "overall_failure_rate": 0.3686,
+  "zone_association": {
+    "chi2": 23.78,
+    "p_value": 2.7819342827655894e-05,
+    "dof": 3,
+    "cramers_v": 0.015
+  },
+  "rf_zone_importance_share": 0.014,
+  "rf_type_year_importance_share": 0.986,
+  "top_feature": "inspection_type_desc_Foundation"
+}
