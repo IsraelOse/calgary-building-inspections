@@ -23,4 +23,4 @@ The practical takeaway: targeting resources by inspection type is far more effec
 ## Tech
 Python · pandas · scikit-learn · SQL · (reporting in Word/PowerPoint)
 
-> **Academic group project (Group 1)**, DAMO Master of Data Analytics. Shared coursework; teammate contributions acknowledged. _Add teammate names here._
+*Project from the Master of Data Analytics program, University of Niagara Falls Canada.*
