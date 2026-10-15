@@ -1,0 +1,170 @@
+{
+  "N": 105462,
+  "overall_failure_pct": 36.86,
+  "zone_summary": {
+    "NW": 38.12,
+    "SE": 36.62,
+    "SW": 36.36,
+    "NE": 36.31
+  },
+  "chi2": 23.78,
+  "p_value": 2.7819342827655894e-05,
+  "cramers_v": 0.015,
+  "mix_adjusted": {
+    "actual_pct": {
+      "NE": 36.31,
+      "NW": 38.12,
+      "SE": 36.62,
+      "SW": 36.36
+    },
+    "expected_given_mix_pct": {
+      "NE": 36.48,
+      "NW": 38.16,
+      "SE": 36.32,
+      "SW": 36.56
+    },
+    "pure_zone_residual_pp": {
+      "NE": -0.17,
+      "NW": -0.04,
+      "SE": 0.29,
+      "SW": -0.2
+    }
+  },
+  "type_mix": {
+    "Framing": {
+      "NE": 48.07,
+      "NW": 52.22,
+      "SE": 44.72,
+      "SW": 44.7
+    },
+    "Final": {
+      "NE": 19.75,
+      "NW": 20.73,
+      "SE": 22.54,
+      "SW": 17.92
+    },
+    "Foundation": {
+      "NE": 9.93,
+      "NW": 10.0,
+      "SE": 10.59,
+      "SW": 9.82
+    },
+    "Progress": {
+      "NE": 9.53,
+      "NW": 4.9,
+      "SE": 9.54,
+      "SW": 12.04
+    },
+    "Gas Rough": {
+      "NE": 3.39,
+      "NW": 3.65,
+      "SE": 3.27,
+      "SW": 4.41
+    },
+    "Gas Final": {
+      "NE": 1.76,
+      "NW": 1.97,
+      "SE": 1.43,
+      "SW": 1.91
+    }
+  },
+  "yearly": {
+    "inspections": {
+      "2005": 6402,
+      "2006": 8442,
+      "2007": 10038,
+      "2008": 2624,
+      "2009": 3026,
+      "2010": 3299,
+      "2011": 4418,
+      "2012": 7693,
+      "2013": 8321,
+      "2014": 6245,
+      "2015": 9208,
+      "2016": 8536,
+      "2017": 4412,
+      "2018": 4682,
+      "2019": 2789,
+      "2020": 2036,
+      "2021": 3195,
+      "2022": 7220,
+      "2023": 2420
+    },
+    "failure_pct": {
+      "2005": 26.12,
+      "2006": 45.56,
+      "2007": 48.61,
+      "2008": 33.27,
+      "2009": 22.67,
+      "2010": 28.13,
+      "2011": 35.88,
+      "2012": 42.7,
+      "2013": 41.73,
+      "2014": 35.8,
+      "2015": 36.69,
+      "2016": 30.86,
+      "2017": 40.53,
+      "2018": 43.23,
+      "2019": 42.2,
+      "2020": 27.55,
+      "2021": 25.29,
+      "2022": 30.04,
+      "2023": 31.12
+    }
+  },
+  "results_table": {
+    "Accuracy": {
+      "LogReg (original, unweighted)": 0.6741,
+      "LogReg (balanced)": 0.541,
+      "Decision Tree (balanced)": 0.5719,
+      "Random Forest (balanced)": 0.6254,
+      "Gradient Boosting (balanced)": 0.6368,
+      "Gradient Boosting (tuned thr=0.43)": 0.5965
+    },
+    "Precision": {
+      "LogReg (original, unweighted)": 0.8067,
+      "LogReg (balanced)": 0.4394,
+      "Decision Tree (balanced)": 0.4563,
+      "Random Forest (balanced)": 0.4947,
+      "Gradient Boosting (balanced)": 0.5051,
+      "Gradient Boosting (tuned thr=0.43)": 0.4735
+    },
+    "Recall": {
+      "LogReg (original, unweighted)": 0.1524,
+      "LogReg (balanced)": 0.8885,
+      "Decision Tree (balanced)": 0.8418,
+      "Random Forest (balanced)": 0.7578,
+      "Gradient Boosting (balanced)": 0.7336,
+      "Gradient Boosting (tuned thr=0.43)": 0.844
+    },
+    "F1": {
+      "LogReg (original, unweighted)": 0.2564,
+      "LogReg (balanced)": 0.588,
+      "Decision Tree (balanced)": 0.5918,
+      "Random Forest (balanced)": 0.5986,
+      "Gradient Boosting (balanced)": 0.5983,
+      "Gradient Boosting (tuned thr=0.43)": 0.6066
+    },
+    "ROC-AUC": {
+      "LogReg (original, unweighted)": 0.6768,
+      "LogReg (balanced)": 0.6707,
+      "Decision Tree (balanced)": 0.6702,
+      "Random Forest (balanced)": 0.7202,
+      "Gradient Boosting (balanced)": 0.7217,
+      "Gradient Boosting (tuned thr=0.43)": 0.7217
+    },
+    "PR-AUC": {
+      "LogReg (original, unweighted)": 0.5573,
+      "LogReg (balanced)": 0.5512,
+      "Decision Tree (balanced)": 0.6365,
+      "Random Forest (balanced)": 0.6051,
+      "Gradient Boosting (balanced)": 0.6067,
+      "Gradient Boosting (tuned thr=0.43)": 0.6067
+    }
+  },
+  "best_threshold": 0.425,
+  "recall_multiple": 5.5,
+  "rf_zone_importance_pct": 1.5,
+  "train_n": 73823,
+  "test_n": 31639
+}
